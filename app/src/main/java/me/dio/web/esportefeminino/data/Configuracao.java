@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -57,7 +58,7 @@ public class Configuracao {
 
             @Override
             public void onFailure(Call<List<Noticia>> call, Throwable t) {
-                Log.i("ERRO_RECYCLER_VIEW", "Erro no servidor!");
+                mensagemErro();
             }
         });
     }
@@ -72,7 +73,7 @@ public class Configuracao {
 
             @Override
             public void onFailure(Call<List<Noticia>> call, Throwable t) {
-                Log.i("ERRO_RECYCLER_VIEW", "Erro no servidor!");
+                mensagemErro();
             }
         });
     }
@@ -87,7 +88,7 @@ public class Configuracao {
 
             @Override
             public void onFailure(Call<List<Noticia>> call, Throwable t) {
-                Log.i("ERRO_RECYCLER_VIEW", "Erro no servidor!");
+                mensagemErro();
             }
         });
     }
@@ -111,7 +112,7 @@ public class Configuracao {
 
             @Override
             public void onFailure(Call<List<Noticia>> call, Throwable t) {
-                Log.i("ERRO_RECYCLER_VIEW", "Erro no servidor!");
+                mensagemErro();
             }
         });
     }
@@ -136,7 +137,7 @@ public class Configuracao {
 
             @Override
             public void onFailure(Call<List<Noticia>> call, Throwable t) {
-                Log.i("ERRO_RECYCLER_VIEW", "Erro no servidor!");
+                mensagemErro();
             }
         });
     }
@@ -156,8 +157,13 @@ public class Configuracao {
 
             @Override
             public void onFailure(Call<List<Noticia>> call, Throwable t) {
-                Log.i("ERRO_RECYCLER_VIEW", "Erro no servidor!");
+                mensagemErro();
             }
         });
+    }
+
+    private void mensagemErro() {
+        String mensagem = "Erro ao conectar com a internet!";
+        Toast.makeText(contexto.getApplicationContext(), mensagem, Toast.LENGTH_LONG);
     }
 }
