@@ -26,6 +26,7 @@
                 android:layout_marginTop="@dimen/margin_default"
                 android:text="@string/title_destaque"
                 android:textColor="@color/primary_700"
+                android:textStyle="bold"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -50,6 +51,7 @@
                 android:layout_marginStart="@dimen/margin_default"
                 android:layout_marginTop="@dimen/margin_default"
                 android:text="@string/title_noticia"
+                android:textStyle="bold"
                 android:textColor="@color/primary_700"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 app:layout_constraintStart_toStartOf="parent"
