@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_8dp"
+    app:cardCornerRadius="@dimen/margin_8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutNoticias"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageItemNoticiaCard"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/cd_noticia_destaque"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tituloItemNoticiaCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imagemCompartilharNoticiasCard"
+            app:layout_constraintStart_toEndOf="@+id/imageItemNoticiaCard"
+            app:layout_constraintTop_toTopOf="@+id/imageItemNoticiaCard"
+            tools:text="Título Detalhe" />
+
+        <ImageView
+            android:id="@+id/imagemCompartilharNoticiasCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/cd_compartilhamento"
+            app:layout_constraintBottom_toBottomOf="@+id/tituloItemNoticiaCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tituloItemNoticiaCard"
+            app:srcCompat="@drawable/ic_compartilhar" />
+
+        <TextView
+            android:id="@+id/descricaoItemNoticiasCard"
+            android:layout_width="0dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:maxLines="3"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageItemNoticiaCard"
+            app:layout_constraintTop_toBottomOf="@+id/tituloItemNoticiaCard"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo finibus sagittis. In dapibus ex id mattis tempor. Sed eleifend vitae purus quis vestibulum. Morbi cursus rutrum interdum." />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

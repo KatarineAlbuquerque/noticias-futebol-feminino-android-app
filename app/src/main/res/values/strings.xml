@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Esporte Feminino</string>
+    <string name="title_inicio">Esporte Feminino</string>
+    <string name="title_noticias">Últimas Notícias</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_destaque">Destaques</string>
+    <string name="title_noticia">Notícias</string>
+    <string name="cd_noticia_destaque">Imagem da Notícia de Destaque</string>
+    <string name="cd_compartilhamento">Imagem para Compartilhamento</string>
+    <string name="button_veja_mais">Veja Mais</string>
+    <string name="title_detalhes_noticia">Detalhes da Notícia</string>
+</resources>

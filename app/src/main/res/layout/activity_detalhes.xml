@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.detalhes.DetalhesActivity">
+
+    <ImageView
+        android:id="@+id/imagemActivityDetalhe"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_image_detalhe"
+        android:contentDescription="@string/cd_noticia_destaque"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tituloActivityDetalhe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@+id/imagemCompartilhamentoActivityDetalhe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagemActivityDetalhe"
+        tools:text="Título Detalhe"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/imagemCompartilhamentoActivityDetalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:src="@drawable/ic_compartilhar"
+        app:layout_constraintBottom_toBottomOf="@+id/tituloActivityDetalhe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tituloActivityDetalhe"
+        android:contentDescription="@string/cd_compartilhamento" />
+
+    <TextView
+        android:id="@+id/descricaoActivityDetalhe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis vulputate eros at dignissim. Sed convallis metus metus, et dignissim enim euismod at. Morbi pellentesque ultrices lectus a vestibulum. Nam id fermentum sem. Donec vitae libero massa. Fusce ut tortor orci. Aenean tempor consectetur enim."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloActivityDetalhe" />
+
+    <Button
+        android:id="@+id/buttonVejaMais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/button_veja_mais"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoActivityDetalhe" />
+</androidx.constraintlayout.widget.ConstraintLayout>
