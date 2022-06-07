@@ -23,6 +23,7 @@
         android:layout_marginStart="@dimen/margin_default"
         android:layout_marginTop="@dimen/margin_default"
         android:layout_marginEnd="@dimen/margin_default"
+        android:textColor="@color/primary_500"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toStartOf="@+id/imagemCompartilhamentoActivityDetalhe"
         app:layout_constraintStart_toStartOf="parent"

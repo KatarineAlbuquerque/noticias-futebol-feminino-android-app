@@ -31,6 +31,7 @@
             android:layout_marginEnd="16dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textStyle="bold"
+            android:textColor="@color/primary_500"
             app:layout_constraintEnd_toStartOf="@+id/imagemCompartilharNoticiasCard"
             app:layout_constraintStart_toEndOf="@+id/imageItemNoticiaCard"
             app:layout_constraintTop_toTopOf="@+id/imageItemNoticiaCard"

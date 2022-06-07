@@ -37,6 +37,7 @@
                 android:layout_marginEnd="@dimen/margin_default"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textStyle="bold"
+                android:textColor="@color/primary_500"
                 app:layout_constraintEnd_toStartOf="@+id/imagemCompartilhamentoNoticias"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imagemDestaqueNoticias"
@@ -62,6 +63,7 @@
                 android:text="@string/title_noticia"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textStyle="bold"
+                android:textColor="@color/primary_700"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/descricaoNoticias" />
 
