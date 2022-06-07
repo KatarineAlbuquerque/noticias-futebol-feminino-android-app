@@ -70,8 +70,7 @@ public class DetalhesActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        Intent i = new Intent(this, MainActivity.class);
-        startActivity(i);
+        abrirYelaPrincipal();
         return super.onOptionsItemSelected(item);
     }
 
@@ -79,6 +78,10 @@ public class DetalhesActivity extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         // Ao precionar voltar
+        abrirYelaPrincipal();
+    }
+
+    private void abrirYelaPrincipal() {
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
