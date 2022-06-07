@@ -14,10 +14,10 @@
 ### II. Layout do Projeto
 
 <table>
-    <tr width="600">
-        <td width="200"><img src="./imagens/img1.png" alt="Tela de Início" width="100%"></td>
-        <td width="200"><img src="./imagens/img2.png" alt="Tela de Início" width="100%"></td>
-        <td width="200"><img src="./imagens/img3.png" alt="Tela de Início" width="100%"></td>
+    <tr width="100%">
+        <td><img src="./imagens/img1.png" alt="Tela de Início" width="100%"></td>
+        <td><img src="./imagens/img2.png" alt="Tela de Início" width="100%"></td>
+        <td><img src="./imagens/img3.png" alt="Tela de Início" width="100%"></td>
     </tr> 
 </table>
 
