@@ -15,6 +15,7 @@ import com.squareup.picasso.Picasso;
 import java.util.Collections;
 import java.util.List;
 
+import me.dio.web.esportefeminino.R;
 import me.dio.web.esportefeminino.adapter.TelaInicioAdapter;
 import me.dio.web.esportefeminino.adapter.TelaNoticiasAdapter;
 import me.dio.web.esportefeminino.model.Noticia;
@@ -163,7 +164,7 @@ public class Configuracao {
     }
 
     private void mensagemErro() {
-        String mensagem = "Erro ao conectar com a internet!";
-        Toast.makeText(contexto.getApplicationContext(), mensagem, Toast.LENGTH_LONG);
+        String mensagem = contexto.getString(R.string.mensagem_erro);
+        Toast.makeText(contexto.getApplicationContext(), mensagem, Toast.LENGTH_LONG).show();
     }
 }

@@ -9,4 +9,5 @@
     <string name="cd_compartilhamento">Imagem para Compartilhamento</string>
     <string name="button_veja_mais">Veja Mais</string>
     <string name="title_detalhes_noticia">Detalhes da Notícia</string>
+    <string name="mensagem_erro">Erro ao conectar com a internet!</string>
 </resources>
